@@ -27,10 +27,10 @@ for r in returns:
     total_sell = sell_price * share_multiplier * contracts
     profit = total_sell - total_cost
     rows.append({
-        "Target Return": f"+{r}%",
-        "Sell Price per Share": f"${sell_price:.2f}",
-        "Total Sell Value": f"${total_sell:.2f}",
-        "Profit": f"${profit:.2f}"
+    "Target Return": f"+{r}%",
+    "Sell Price per Share": f"${sell_price:.2f}",
+    "Profit": f"${profit:.2f}",
+    "Total Sell Value": f"${total_sell:.2f}"
     })
 
 df_options = pd.DataFrame(rows)
@@ -54,10 +54,10 @@ for r in returns:
     total_sell = sell_price * num_shares
     profit = total_sell - total_share_cost
     rows_shares.append({
-        "Target Return": f"+{r}%",
-        "Sell Price": f"${sell_price:.2f}",
-        "Total Sell Value": f"${total_sell:.2f}",
-        "Profit": f"${profit:.2f}"
+    "Target Return": f"+{r}%",
+    "Sell Price": f"${sell_price:.2f}",
+    "Profit": f"${profit:.2f}",
+    "Total Sell Value": f"${total_sell:.2f}"
     })
 
 df_shares = pd.DataFrame(rows_shares)
